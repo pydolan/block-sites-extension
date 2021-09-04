@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <body>
+    This site is blocked: <a id="blocked-url" href=""></a>
+
+    <script>
+      const params = new URLSearchParams(window.location.search.slice(1));
+      const a = document.getElementById("blocked-url");
+      a.href = params.get("url");
+      a.innerHTML = params.get("url");
+    </script>
+  </body>
+</html>

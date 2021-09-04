@@ -1,0 +1,24 @@
+{
+  "name": "Block Sites",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'sha256-qdkA3BeeAVf7hCXEbtTzPGDzejN07DLXPLBSoMYna+E='",
+  "description": "Block access to particular sites.",
+  "homepage_url": "https://github.com/pydolan/block-sites-extension",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html"
+  },
+  "options_page": "src/options_custom/index.html",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/*"
+  ]
+}
